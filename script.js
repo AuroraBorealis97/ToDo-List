@@ -22,6 +22,8 @@ function addTask(){
     span2.innerHTML = input.value;
     edit.innerHTML = 'Edit';
     del.innerHTML = 'Delete';
+    del.onclick = () => {li.remove()}
+
     span2.classList.add('item');
     edit.classList.add('edit');
     del.classList.add('delete');

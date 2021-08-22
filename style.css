@@ -101,7 +101,8 @@ input[type=checkbox]{
     background-color: rgba(10, 148, 10, .5);
     padding: 3px;
     margin-left: 10px;
-
+   z-index: 1;
+   cursor: pointer;
 }
 
 .delete{
@@ -109,6 +110,8 @@ input[type=checkbox]{
     background-color: rgba(252, 41, 41, 0.5);
     margin-left: 10px;
     padding: 3px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .clear{
