@@ -3,6 +3,7 @@ let select = document.querySelector('select');
 let addBtn = document.querySelector('.add');
 let list = document.querySelector('.list');
 let clearBtn = document.querySelector('.clear');
+let closeBtn = document.querySelector('.close');
 
 addBtn.addEventListener('click', addTask);
 
@@ -28,13 +29,23 @@ function addTask(){
     edit.innerHTML = 'Edit';
     del.innerHTML = 'Delete';
 
-    //delete button function
+    //delete item on todo list
+
     del.onclick = () => li.remove();
 
     edit.onclick = () => {
         input.value = span2.innerHTML;
-        edit()
-        li.remove();
+        closeBtn.style.visibility = "visible";
+
+        closeBtn.onclick = () =>{
+            li.style.opacity = 1;
+            input.value ='';
+            closeBtn.style.visibility ='hidden';
+        }
+
+        li.style.opacity = 0.7;
+
+        
         
     }
     
@@ -55,15 +66,17 @@ function addTask(){
     
 }
 
-//edit function
+//edit item in function
 
 function edit(){
   
     addTask();
     li.remove();
 }
+// close btn function
 
-//select filter
+
+//function to filter todo list
 
 function filter(){
     let items = document.querySelectorAll('li');
