@@ -7,6 +7,8 @@ let clearBtn = document.querySelector('.clear');
 addBtn.addEventListener('click', addTask);
 
 clearBtn.addEventListener('click', clear);
+
+select.addEventListener('change',filter);
  
 
  //add task function
@@ -40,6 +42,7 @@ function addTask(){
     span2.classList.add('item');
     edit.classList.add('edit');
     del.classList.add('delete');
+    checkbox.classList.add('checkbox');
 
    
     list.append(li);
@@ -58,6 +61,34 @@ function edit(){
   
     addTask();
     li.remove();
+}
+
+//select filter
+
+function filter(){
+    let items = document.querySelectorAll('li');
+    let checkboxes = document.querySelectorAll('.checkbox')
+if(select.value === 'completed'){
+    
+    for(let i = 0; i <= items.length; i++){
+        items[i].style.display = "block";
+      if(checkboxes[i].checked === false){
+          items[i].style.display = "none";
+      }
+    }
+}
+else if(select.value === 'unfinished'){
+   
+    for(let i = 0; i <= items.length; i++){
+        items[i].style.display = "block";
+        if(checkboxes[i].checked === true){
+            
+            items[i].style.display = "none";
+        }
+      }
+}else{for(let i = 0;i <= items.length; i++){
+    items[i].style.display = "block";
+}}
 }
 
 //clear function
