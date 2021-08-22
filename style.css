@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(237, 238, 207);
+    font-size: 16px;
+    font-family: 'Klee One';
+}
+
+main{
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    box-shadow: 1px 1px 15px, -1px -1px 15px;
+}
+
+h1{text-align: center;
+   
+}
+
+.top{
+    margin: 0 auto;
+    width: 90%;
+}
+
+input[type=text]{
+  width: 227px;
+  height:25px;
+  border: transparent;
+  outline: transparent;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  
+}
+.task-field{
+    width: 310px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: white;
+    
+}
+
+select{
+    height: 39px;
+    width: 310px;
+    margin: 20px auto;
+   display: block;
+   cursor: pointer;
+   font-size: 1.25rem;
+}
+
+.add{
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 0 0 0 -6px;
+    height: 25px;
+    padding: 6px;
+    background-color: rgb(217, 218, 216);
+    z-index: 1;
+    cursor: pointer;
+    line-height: 1.5;
+}
+.add:hover{
+    background-color: rgb(201, 197, 197);
+}
+
+ul{
+    list-style-type: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+ul li{
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(247, 247, 232);
+    font-size: 1.25rem;
+    
+}
+
+.item{
+    display: inline-block;
+    width: 150px;
+    text-overflow: clip;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox]{
+    margin-right: 20px;
+}
+
+.edit{
+    border: 1px solid green;
+    background-color: rgba(10, 148, 10, .5);
+    padding: 3px;
+    margin-left: 10px;
+
+}
+
+.delete{
+    border: 1px solid red;
+    background-color: rgba(252, 41, 41, 0.5);
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.clear{
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+    height: 25px;
+    
+    
+}
+
+@media only screen and (min-width: 775px) {
+    
+
+    .top{
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        
+    }
+    .task-field{
+        margin: 0;
+    }
+    select{
+        margin: 0;
+    }
+   .edit{
+       margin-left: 10%;
+   }
+    .item{
+        width: 200px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    input[type=text]{
+        width: 368px;
+    }
+    
+    .task-field{
+        width: 450px;
+    }
+    main{
+        width: 75%;
+    }
+
+    }
+    
+
+
+@media only screen and (min-width: 1400px){
+    
+
+    .item{
+        width: 500px;
+    
+} 
+    
+}
+@media only screen and (min-width: 1600px){
+    
+
+    .item{
+        width: 600px;
+    
+} 
+    
+}
+@media only screen and (min-width: 1800px){
+    
+
+    .item{
+        width: 700px;
+    
+} 
+    
+}
+@media only screen and (min-width: 2050px){
+    
+    
+
+    .item{
+        width: 800px;
+    
+} 
+    
+}
+
+
+
