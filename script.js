@@ -36,18 +36,22 @@ function addTask(){
     edit.onclick = () => {
         input.value = span2.innerHTML;
         closeBtn.style.visibility = "visible";
+       // li.style.opacity = 0.7;
+        
+       // edit.disabled =true;
+      //  del.disabled = true;
 
+
+        //close edit input button function
         closeBtn.onclick = () =>{
-            li.style.opacity = 1;
+          //  li.style.opacity = 1;
             input.value ='';
             closeBtn.style.visibility ='hidden';
+         //   edit.disabled = false;
+         //   del.disabled = false;
         }
-
-        li.style.opacity = 0.7;
-
-        
-        
-    }
+        li.remove();
+        }
     
 
     span2.classList.add('item');
@@ -68,12 +72,12 @@ function addTask(){
 
 //edit item in function
 
-function edit(){
-  
+function editBtn(){
     addTask();
-    li.remove();
+    
 }
-// close btn function
+// disable btn function
+  
 
 
 //function to filter todo list
