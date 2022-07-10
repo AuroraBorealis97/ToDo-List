@@ -16,7 +16,6 @@ This project was created a personal project to demonstrate my knowledge of javas
 
 * How to run the program
 * Step-by-step bullets
-```
 
 ## Authors
 
